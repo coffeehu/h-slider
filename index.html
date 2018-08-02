@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider Imgs</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./h-slider.css">
+	<script src="./h-slider.js"></script>
+	<style type="text/css">
+		body {
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			background: #000;
+		}
+		.test-wrapper {
+			
+		}
+		#imageFlow {
+			position: absolute;
+    		top: 10%;
+    		width: 100%;
+        	background: #000;
+        	width: 70%;
+        	left: 15%;
+		}
+	</style>
+</head>
+<body>
+
+<div class="test-wrapper">
+	
+
+		<div class="h-slideimg" id="imageFlow">
+			<div class="h-slideimg-content">
+				<ul>
+					<li>
+						<img src="./imgs/1.jpg"/>
+					</li>
+					<li>
+						<img src="./imgs/2.jpg"/>
+					</li>
+					<li>
+						<img src="./imgs/3.jpg"/>
+					</li>
+					<li>
+						<img src="./imgs/4.jpg"/>
+					</li>
+					<li>
+						<img src="./imgs/5.jpg"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+</div>
+
+<script type="text/javascript">
+	/*var movies = [
+		{
+			id: 1,
+			title: '我不是药神',
+			url: './imgs/1.jpg'
+		},
+		{
+			id: 2,
+			title: '大头儿子小头爸爸',
+			url: './imgs/2.jpg'
+		},
+		{
+			id: 3,
+			title: '超人总动员2',
+			url: './imgs/3.jpg'
+		},
+		{
+			id: 4,
+			title: '动物世界',
+			url: './imgs/4.jpg'
+		},
+		{
+			id: 5,
+			title: '邪不压正',
+			url: './imgs51.jpg'
+		}
+	];*/
+
+	var imageFlow = new ImageFlow('imageFlow', null, 1.5);
+	imageFlow.run(1, 3000);
+	//imageFlow.setScale(1, 1.5);
+
+</script>
+</body>
+</html>
